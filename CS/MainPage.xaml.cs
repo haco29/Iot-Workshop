@@ -23,7 +23,7 @@ namespace Blinky
             InitializeComponent();
 
             timer = new DispatcherTimer();
-            timer.Interval = TimeSpan.FromMilliseconds(250);
+            timer.Interval = TimeSpan.FromMilliseconds(100);
             timer.Tick += Timer_Tick;
             InitGPIO();
             if (pin != null)
